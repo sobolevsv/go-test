@@ -6,10 +6,10 @@ func TestFoo(t *testing.T) {
 	Foo()
 }
 
-// func TestBoo(t *testing.T) {
-// 	Boo()
-// }
+func TestBoo(t *testing.T) {
+	Boo()
+}
 
-// func TestZoo(t *testing.T) {
-// 	Zoo()
-// }
+func TestZoo(t *testing.T) {
+	Zoo()
+}
