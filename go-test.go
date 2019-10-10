@@ -25,7 +25,7 @@ func worker(id int, wg *sync.WaitGroup) {
 	wg.Done()
 }
 
-// Foo aaa
+// Foo запускаем по горутине на каждый json.Unmarshal
 func Foo() {
 	var wg sync.WaitGroup
 	for i := 0; i < reqCount; i++ {
@@ -59,7 +59,7 @@ func worker1(id int, wg *sync.WaitGroup, ch chan []byte) {
 	fmt.Printf("worker %d done, count: %d\n", id, count)
 }
 
-// Boo dfd
+// Boo пул воркеров
 func Boo() {
 	var wg sync.WaitGroup
 	//ch := make(chan int, 1)
@@ -75,7 +75,7 @@ func Boo() {
 	wg.Wait()
 }
 
-// Zoo fff
+// Zoo все в одном потоке/цикле
 func Zoo() {
 	var p interface{}
 	for i := 0; i < reqCount; i++ {
