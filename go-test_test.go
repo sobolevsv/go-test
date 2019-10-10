@@ -2,14 +2,14 @@ package main
 
 import "testing"
 
-func TestFoo(t *testing.T) {
+func Test1(t *testing.T) {
+	Zoo()
+}
+
+func Test2(t *testing.T) {
 	Foo()
 }
 
-func TestBoo(t *testing.T) {
+func Test3(t *testing.T) {
 	Boo()
-}
-
-func TestZoo(t *testing.T) {
-	Zoo()
 }
