@@ -1,0 +1,8 @@
+break runtime.execute
+  condition $bpnum gp == 0xc000001200
+break test.go:10
+break test.go:20
+break proc.go:2254
+break sys_linux_amd64.s:536
+break proc.go:2524
+break *0x45c230
