@@ -8,6 +8,7 @@ import (
 func testGo(wg *sync.WaitGroup) {
 //    fmt.Print("Hello world\n")
     wg.Done()
+    fmt.Print("exiting GOROUTINE !!!!!!\n")
 }
 
 func main() {
@@ -22,7 +23,7 @@ func main() {
 	wg.Wait()
 //    }
 
-    fmt.Print("exiting main\n")
+    fmt.Print("exiting MAIN!!!!!!!!!!!!!\n")
 }
 
 
