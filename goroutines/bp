@@ -1,8 +1,17 @@
-break runtime.execute
-  condition $bpnum gp == 0xc000001200
-break test.go:10
-break test.go:20
-break proc.go:2254
-break sys_linux_amd64.s:536
-break proc.go:2524
-break *0x45c230
+break *0x45a4d0
+break asm_amd64.s:217
+break proc.go:563
+break proc.go:3252
+break proc.go:3264
+break proc.go:1147
+break proc.go:1180
+break proc.go:2462
+break proc.go:2138
+break proc.go:114
+break proc.go:310
+break proc.go:314
+break proc.go:288
+break sema.go:160
+break proc.go:648
+break proc.go:2658
+break proc.go:2669
