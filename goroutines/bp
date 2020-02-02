@@ -15,3 +15,4 @@ break sema.go:160
 break proc.go:648
 break proc.go:2658
 break proc.go:2669
+break /home/sergei/goroot/src/runtime/proc.go:2046
