@@ -8,11 +8,10 @@ import (
 
 func main() {
 	var counter int64 = 0
-	for i := 0; i < 20; i++ {
+	for i := 0; i < 10; i++ {
 		go func(id int) {
 			for {
 				atomic.AddInt64(&counter, 1)
-				//fmt.Printf("%v -  %v\n", id, counter)
 			}
 		}(i)
 	}
