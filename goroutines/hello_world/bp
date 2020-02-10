@@ -1,3 +1,6 @@
-break fd_unix.go:268
-break proc.go:2953
-break proc.go:3115
+break *0x45a470
+break proc.go:114
+watch 'runtime.m0'.curg
+break proc.go:190
+tbreak main.main
+break proc.go:168
