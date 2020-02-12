@@ -1,22 +1,23 @@
 package main
 
 import (
-    "sync"
+	"fmt"
+	"sync"
 )
 
 func main() {
-   var wg sync.WaitGroup
-   wg.Add(2)
+	var wg sync.WaitGroup
+	wg.Add(2)
 
-   go func() {
-      println(`hello`)
-      wg.Done()
-   }()
+	go func() {
+		fmt.Println("hello")
+		wg.Done()
+	}()
 
-   go func() {
-      println(`world`)
-      wg.Done()
-   }()
+	go func() {
+		fmt.Println("world")
+		wg.Done()
+	}()
 
-   wg.Wait()
+	wg.Wait()
 }
