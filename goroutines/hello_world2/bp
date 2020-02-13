@@ -20,6 +20,6 @@ break os_linux.go:144
 break proc.go:2264
 break proc.go:3360
 break proc.go:2711
-break hello.go:11
-break hello.go:16
-break hello.go:21
+break hello.go:19
+break hello.go:20
+break hello.go:22
