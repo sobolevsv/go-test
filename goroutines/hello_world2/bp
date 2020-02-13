@@ -23,3 +23,10 @@ break proc.go:2711
 break hello.go:19
 break hello.go:20
 break hello.go:22
+break hello.go:13
+break hello.go:10
+break hello.go:12
+break waitgroup.go:92
+break waitgroup.go:130
+break proc.go:2599
+break proc.go:1930
