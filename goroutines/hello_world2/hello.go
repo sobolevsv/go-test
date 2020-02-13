@@ -5,19 +5,19 @@ import (
 	"sync"
 )
 
+var wg sync.WaitGroup
+
+func printAsync(arg string) {
+	fmt.Println(arg)
+	wg.Done()
+}
+
 func main() {
-	var wg sync.WaitGroup
+
 	wg.Add(2)
 
-	go func(arg string) {
-		fmt.Println(arg)
-		wg.Done()
-	}("hello")
-
-	go func(arg string) {
-		fmt.Println(arg)
-		wg.Done()
-	}("world")
+	go printAsync("hello")
+	go printAsync("world")
 
 	wg.Wait()
 }
