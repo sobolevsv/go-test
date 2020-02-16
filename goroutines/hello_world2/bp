@@ -30,3 +30,5 @@ break waitgroup.go:92
 break waitgroup.go:130
 break proc.go:2599
 break proc.go:1930
+break sys_linux_amd64.s:556
+break sys_linux_amd64.s:541
